@@ -1,6 +1,8 @@
 class User < ApplicationRecord
 
-  
+  has_many :restaurant
+  has_many :reviews
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, :omniauth_providers => [:facebook]
