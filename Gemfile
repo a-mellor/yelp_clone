@@ -34,6 +34,7 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rspec-collection_matchers'
+  gem 'shoulda-matchers'
 end
 
 group :development, :test do
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'haml'
   gem 'devise'
+  gem 'omniauth-facebook'
 end
 
 group :development do
